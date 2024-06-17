@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-primary text-white font-poppins;
+}
+
+.hamburger-menu {
+    @apply block w-[35px] h-[4px] bg-white rounded-md;
+}
+
+.nav-menu-animation {
+    @apply relative inline-block pb-1 border-b-2 border-transparent hover:opacity-75 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-white after:content-[''] after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-50;
+}
+
+.nav-sidebar {
+    @apply relative inline-block mb-2 text-white pb-1 border-b-2 border-transparent hover:opacity-75 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-1/5 after:bg-white after:content-[''] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100;
+}
