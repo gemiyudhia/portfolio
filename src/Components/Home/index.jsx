@@ -1,11 +1,15 @@
 import React from "react";
+import Typical from "react-typical";
 import { Button } from "../Utilities/Button";
 
 export const Home = () => {
   return (
     <div className="container mx-auto min-h-screen flex justify-center items-center flex-col gap-y-5 lg:flex-row mt-16 lg:mt-0">
-      <div className="font-bold text-5xl space-y-2 mb-12 text-left w-full \">
-        <h1>Hi! 👋</h1>
+      <div className="font-bold text-5xl space-y-2 mb-12 text-left w-full">
+        <div className="flex">
+          <h1>Hi!</h1>
+          <div className="animate-bounce">👋</div>
+        </div>
         <h1>
           Saya{" "}
           <span className="relative cursor-pointer">
@@ -21,7 +25,13 @@ export const Home = () => {
             ))}
           </span>
         </h1>
-        <p>Frontend Developer</p>
+        <p>
+          <Typical
+            steps={["Web Developer", 1000, "Frontend Developer", 2000]}
+            loop={Infinity}
+            wrapper="span"
+          />
+        </p>
         <div className="mt-12">
           <Button to="/projects">Proyek Saya</Button>
         </div>
