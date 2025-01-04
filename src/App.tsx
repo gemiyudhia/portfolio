@@ -1,4 +1,5 @@
 import About from "./components/About";
+import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
 import Footer from "./components/Footer/Footer";
 import FormContact from "./components/FormContact";
 import Header from "./components/Header";
@@ -26,6 +27,9 @@ function App() {
         </div>
         <Footer />
       </div>
+      <section id="home">
+        <BackToTopButton />
+      </section>
     </>
   );
 }
