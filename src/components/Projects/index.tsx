@@ -126,41 +126,34 @@ const Projects = () => {
       >
         my project
       </h1>
-      <div className="grid grid-cols-4 lg:grid-cols-5 grid-rows-4 gap-4">
+      <div className="grid grid-cols-4 lg:grid-cols-5 grid-rows-4 gap-7">
         {/* Gambar pertama */}
         <img
           ref={projectOneRef}
           src=""
           alt="1"
-          className="bg-primary rounded-3xl w-full h-96 col-span-4 row-span-2 lg:col-span-3"
+          className="bg-primary rounded-3xl w-full h-96 col-span-4 row-span-2 lg:col-span-3 shadow-thick-solid"
         />
         {/* Gambar kedua */}
         <img
           ref={projectTwoRef}
           src=""
           alt="2"
-          className="bg-primary rounded-3xl w-full h-96 col-span-2 row-span-2"
+          className="bg-primary rounded-3xl w-full h-96 col-span-4 md:col-span-2 row-span-2 shadow-thick-solid"
         />
         {/* Gambar ketiga */}
-        <img
-          ref={projectThreeRef}
-          src=""
-          alt="3"
-          className="bg-primary rounded-3xl w-full h-96 col-span-2 lg:col-span-1 row-span-2"
-        />
-        {/* Gambar keempat - turun ke bawah di sebelah gambar kelima saat lg */}
         <img
           ref={projectFourRef}
           src=""
           alt="4"
-          className="bg-primary rounded-3xl w-full h-96 col-span-4 row-span-2 md:col-span-2 lg:row-span-2"
+          className="bg-primary rounded-3xl w-full h-96 col-span-4 row-span-2 md:col-span-2 lg:row-span-2 shadow-thick-solid"
         />
         {/* Gambar kelima */}
         <img
           ref={projectFiveRef}
           src=""
           alt="5"
-          className="bg-primary rounded-3xl w-full h-96 col-span-4 row-span-2 md:col-span-2"
+          className="bg-primary rounded-3xl w-full h-96 col-span-4 row-span-2 lg:col-span-3 shadow-thick-solid"
         />
       </div>
     </section>

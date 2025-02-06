@@ -62,7 +62,7 @@ const Header = () => {
   return (
     <nav
       ref={navbarRef}
-      className="sticky top-0 z-20 bg-primary rounded-full py-3 px-3 pr-7 container mx-auto"
+      className="sticky top-0 z-20 bg-primary rounded-full py-3 px-3 pr-7 container mx-auto shadow-thick-solid"
     >
       <div className="flex items-center">
         <div className="flex items-center w-full">

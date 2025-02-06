@@ -26,7 +26,7 @@ const CardPhoto = () => {
     <div className="mt-12 md:mb-20 lg:flex lg:items-center">
       <div
         ref={cardRef}
-        className="bg-primary rounded-3xl w-full md:w-[300px] h-[400px] overflow-hidden"
+        className="bg-primary rounded-3xl w-full md:w-[300px] h-[400px] overflow-hidden shadow-thick-solid"
       >
         <img src="" alt="foto" className="object-cover w-full h-full" />
       </div>

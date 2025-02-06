@@ -63,11 +63,11 @@ const FormContact = () => {
       <h1 className="flex items-center text-3xl text-secondary font-bold mb-8">
         Write me a Message <MdMessage className="ml-2 text-primary" />
       </h1>
-      <div className="lg:grid grid-cols-2">
+      <div className="lg:grid grid-cols-2 ">
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-slate-200 py-9 px-5 flex flex-col rounded-3xl"
+          className="bg-slate-200 py-9 px-5 flex flex-col rounded-3xl shadow-thick-solid"
         >
           <label className="text-secondary font-semibold mb-1">Name</label>
           <input
