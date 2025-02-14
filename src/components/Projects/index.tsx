@@ -6,12 +6,20 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { projects } from "../data/projects"; // Import projects dari file terpisah
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const projectRef = useRef<HTMLDivElement>(null);
   const projectCards = useRef<(HTMLDivElement | null)[]>([]);
 
   useGSAP(() => {
+    const scrollConfig = {
+      start: "top 80%",
+      end: "bottom 20%",
+      toggleActions: "play none none reverse",
+      scroller: ".scrollbar",
+    };
+
     gsap.fromTo(
       projectRef.current,
       { opacity: 0, y: 50 },
@@ -20,13 +28,7 @@ const Projects = () => {
         y: 0,
         duration: 1.5,
         ease: "power3.out",
-        scrollTrigger: {
-          trigger: projectRef.current,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none reverse",
-          scroller: ".scrollbar",
-        },
+        scrollTrigger: scrollConfig,
       }
     );
 

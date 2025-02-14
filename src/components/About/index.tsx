@@ -31,7 +31,7 @@ const About = () => {
   }, []);
 
   return (
-    <section ref={aboutRef} className="md:pt-28 pt-[100px]">
+    <section ref={aboutRef} className="md:pt-28 pt-[100px] mb-10">
       <div className="flex flex-wrap">
         <div className="w-full px-4 mb-10 md:w-1/2">
           <h4 className="font-bold uppercase text-primary text-3xl mb-3">
