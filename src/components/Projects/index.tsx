@@ -91,10 +91,10 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+              <h3 className="text-xl font-semibold mb-2 text-white">
                 {project.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-slate-200">
                 {project.description}
               </p>
             </div>
