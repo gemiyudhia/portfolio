@@ -24,7 +24,6 @@ const About = () => {
           start: "top 80%",
           end: "bottom 20%",
           toggleActions: "play none none reverse",
-          scroller: ".scrollbar", // Pastikan GSAP mendeteksi elemen scroll yang benar
         },
       }
     );

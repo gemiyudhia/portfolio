@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div className="scrollbar overflow-y-scroll h-screen scroll-smooth">
+      <div>
         <div className="container mx-auto px-5 py-8">
           <Header />
           <section id="home">

@@ -17,7 +17,6 @@ const Projects = () => {
       start: "top 80%",
       end: "bottom 20%",
       toggleActions: "play none none reverse",
-      scroller: ".scrollbar",
     };
 
     gsap.fromTo(
@@ -46,7 +45,6 @@ const Projects = () => {
             start: "top 80%",
             end: "bottom 20%",
             toggleActions: "play none none reverse",
-            scroller: ".scrollbar",
           },
         }
       );

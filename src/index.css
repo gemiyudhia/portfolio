@@ -3,40 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply font-poppins overflow-hidden;
+  @apply font-poppins;
 }
 
 .hamburger-line {
   @apply w-[30px] h-[4px] bg-white rounded-xl;
-}
-
-@layer utilities {
-  /* Custom Scrollbar Styles */
-  .scrollbar::-webkit-scrollbar {
-    width: 100px; /* Ukuran scrollbar */
-    height: 800px; /* Ukuran scrollbar horizontal */
-  }
-
-  .scrollbar::-webkit-scrollbar-track {
-    background: #f7f4ed; /* Warna track */
-    border-radius: 10px; /* Rounded track */
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: #583ebd; /* Warna thumb */
-    border-radius: 10px; /* Rounded thumb */
-    border: 3px solid #f7f4ed; /* Border pada thumb */
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #4b2b91; /* Warna thumb saat hover */
-  }
-
-  /* Tambahkan untuk Firefox */
-  .scrollbar {
-    scrollbar-width: thin; /* Ukuran scrollbar */
-    scrollbar-color: #583ebd #f7f4ed; /* Thumb dan track */
-  }
 }
 
 @layer base {
