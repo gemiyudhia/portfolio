@@ -28,7 +28,7 @@ const CardPhoto = () => {
         ref={cardRef}
         className="bg-primary rounded-3xl w-full md:w-[300px] h-[400px] overflow-hidden shadow-thick-solid"
       >
-        <img src="" alt="foto" className="object-cover w-full h-full" />
+        <img src="/foto.png" alt="foto" className="object-cover w-full h-full" />
       </div>
 
       {/* Social Media */}
